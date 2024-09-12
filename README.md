@@ -6,9 +6,9 @@ This project is a custom API built on Google Apps Script to retrieve data on Goo
 URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?pincode=123456
 <br><br>**Response:**
 +	If no rows contains the pincode, it returns an error message.
-+	If a single row matches the pincode, it returns the entire row as a JSON object.(452012)
++	If a single row matches the pincode, it returns the entire row as a JSON object.(E.g. 452012)
  
-+	If multiple rows match the pincode, it returns an array of office names. (454001)
++	If multiple rows match the pincode, it returns an array of office names. (E.g. 454001)
 
 **Scenario 2: Searching by District**
 URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?district=exampleDistrict
