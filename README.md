@@ -4,7 +4,7 @@ This project is a custom API built on Google Apps Script to retrieve data on Goo
 
 **Scenario 1: Searching by Pincode**
 URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?pincode=123456
-**Response:**
+<br>**Response:**
 +	If no rows contains the pincode, it returns an error message.
 +	If a single row matches the pincode, it returns the entire row as a JSON object.(452012)
  
