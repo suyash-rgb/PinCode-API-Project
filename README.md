@@ -39,6 +39,16 @@ URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3F
 +	If multiple rows match the office name, it returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values.
   
 <br><br>
+**Contributing**<br>
+We welcome contributions! Please follow these steps:
+<br>
+1. Fork the repository.<br>
+2. Create a new branch (git checkout -b feature-branch).<br>
+3. Make your changes.<br>
+4. Commit your changes (git commit -m 'Add new feature').<br>
+5. Push to the branch (git push origin feature-branch).<br>
+6. Create a new Pull Request.<br>
+<br><br>
 
 In the future, I plan to re-implement this API using SpringBoot and AWS to enhance performance and scalability, as well as to explore database indexing in AWS for optimal performance.
 <br><br>
