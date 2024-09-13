@@ -69,5 +69,9 @@ Using AWS Cloud over Google Sheets offers several advantages, especially for bus
 (3) <a href = "https://www.techquintal.com/advantages-and-disadvantages-of-aws/">8 Advantages and Disadvantages of AWS (Amazon Web Services) </a><br>
 (4) <a href = "https://cloudvisor.co/aws-guides/aws-vs-google-cloud-comparison/">A Comprehensive Comparison: AWS vs Google Cloud</a> - Cloudvisor <br>
 (5) <a href = "https://www.techrepublic.com/article/aws-vs-google-cloud/">Google Cloud vs. AWS Comparison: Which Is Best?</a> - TechRepublic <br>
+<br><br>
 
-
+**Contact**<br><br>
+For any inquiries or feedback, please contact suyashbaoney58@gmail.com. 
+<br><br>
+Feel free to customize this template further to suit your project's needs. If you have any specific sections or details you'd like to add, let me know! 
