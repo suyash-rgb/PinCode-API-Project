@@ -71,7 +71,7 @@ Using AWS Cloud over Google Sheets offers several advantages, especially for bus
 (5) <a href = "https://www.techrepublic.com/article/aws-vs-google-cloud/">Google Cloud vs. AWS Comparison: Which Is Best?</a> - TechRepublic <br>
 <br><br>
 
-**Contact**<br><br>
+**Contact**<br>
 For any inquiries or feedback, please contact suyashbaoney58@gmail.com. 
-<br><br>
+<br>
 Feel free to customize this template further to suit your project's needs. If you have any specific sections or details you'd like to add, let me know! 
