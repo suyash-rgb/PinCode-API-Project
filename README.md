@@ -55,9 +55,9 @@ Using AWS Cloud over Google Sheets offers several advantages, especially for bus
 5. **Global Reach**: AWS has a vast global infrastructure with numerous data centers around the world, ensuring low latency and high availability¹. Google Sheets, being a web-based application, does not offer the same level of global infrastructure support.
 <br><br>
 (1) <a href = "https://www.cloudwards.net/google-cloud-vs-aws/">Google Cloud vs AWS: Which Cloud Computing Platform is Better? </a>- Cloudwards.<br>
-(2) <a href = "https://www.gartner.com/reviews/market/strategic-cloud-platform-services/compare/amazon-web-services-vs-google">Amazon Web Services (AWS) vs Google - Gartner. </a><br>
-(3) <a href = "https://www.techquintal.com/advantages-and-disadvantages-of-aws/">8 Advantages and Disadvantages of AWS (Amazon Web Services). </a><br>
-(4) <a href = "https://cloudvisor.co/aws-guides/aws-vs-google-cloud-comparison/">A Comprehensive Comparison: AWS vs Google Cloud - Cloudvisor. </a><br>
-(5) <a href = "https://www.techrepublic.com/article/aws-vs-google-cloud/">Google Cloud vs. AWS Comparison: Which Is Best? - TechRepublic. </a><br>
+(2) <a href = "https://www.gartner.com/reviews/market/strategic-cloud-platform-services/compare/amazon-web-services-vs-google">Amazon Web Services (AWS) vs Google</a> - Gartner <br>
+(3) <a href = "https://www.techquintal.com/advantages-and-disadvantages-of-aws/">8 Advantages and Disadvantages of AWS (Amazon Web Services) </a><br>
+(4) <a href = "https://cloudvisor.co/aws-guides/aws-vs-google-cloud-comparison/">A Comprehensive Comparison: AWS vs Google Cloud</a> - Cloudvisor <br>
+(5) <a href = "https://www.techrepublic.com/article/aws-vs-google-cloud/">Google Cloud vs. AWS Comparison: Which Is Best?</a> - TechRepublic <br>
 
 
