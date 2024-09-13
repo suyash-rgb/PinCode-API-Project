@@ -10,7 +10,9 @@ NOTE: Method is GET for all scenarios
 **cURL**
 curl --location 'https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?district=indore' \
 --data ''
+<br><br>
 
+Sample Sheet: 
 ![Loading image...](images/SampleSheet.png)
 
 
