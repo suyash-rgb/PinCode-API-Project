@@ -3,7 +3,7 @@
 This project is a custom API built on Google Apps Script to retrieve data on Google Sheets in real time. It enables users to automate Google Sheets workflows, fetch data, and integrate with third-party applications seamlessly. 
 <br>
 <br>
-The PIN Code API provides functionalities related to PIN codes, initially developed using Google Apps Script and Google Sheets. Originally part of a bigger project, the API was created to handle large datasets efficiently. <br>
+The PIN Code API provides functionalities related to PIN codes, initially developed using Google Apps Script and Google Sheets. Originally part of a bigger project, the API was created to handle large datasets efficiently. <br><br>
 The API functionality was modified and now serves 3 purposes:
 <br><br> 
 + Search By Pincode
