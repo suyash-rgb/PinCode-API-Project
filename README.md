@@ -10,9 +10,9 @@ The API functionality was modified and now serves 3 purposes:
 + Search By District
 + Search By Office Name
 <br><br>
-I have changed the last part (i.e., Search By Office Name), so it is not functional. <br>
+**I have changed the last part (i.e., Search By Office Name), so it is not functional. <br>
 I present it to you for fixing the intentional bug and/or providing new functionality for the API.<br>
-Do something creative! Good Luck!
+Do something creative! Good Luck!**
 <br>
 Detailed description of the working and type of response are provided below. 
 <br><br>
