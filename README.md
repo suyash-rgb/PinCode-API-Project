@@ -22,13 +22,14 @@ URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleK
 +	If a single row matches the pincode, it returns the entire row as a JSON object.(E.g. 452012)<br>
  ![Loading image...](Images/Picture1.png)
 +	If multiple rows match the pincode, it returns an array of office names. (E.g. 454001)
+  ![Loading image...](Images/Picture2.png)
 
 **Scenario 2: Searching by District**
 URL: https://script.google.com/macros/s/AKfycbznP4tVoAoSpaJ2XSR9u1wum3fZkUoLCvlYvIYTy6z-XIbyIDnjgh8NmsLCrvcSCFvN/exec?district=exampleDistrict
 <br><br>**Response:**
 +	If no rows match the district, it returns an error message.
 +	If rows match the district, it returns an array of objects with "Office Name", "Pincode", and "Delivery" values.
-
+![Loading image...](Images/Picture3.png)
 
 **Scenario 3: Searching by Office Name**
 URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleKxSKoLnpOCRDpgd7eAnsF79ZNFhqrirQp/exec?=exampleOfficeName
