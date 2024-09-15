@@ -50,7 +50,7 @@ URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleK
 +	If a single row matches the office name, it returns the "Pincode" and "Delivery" values. 
 ![Loading image...](Images/Picture4.png)
 <br>
-- If multiple rows match the office name, it returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values.<br>
+* If multiple rows match the office name, it returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values.<br>
 <!--- ![Loading image...](Images/Picture5-COJAU6vIx-transformed.png) --->
 <br><br>
 
