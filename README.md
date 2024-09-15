@@ -36,10 +36,10 @@ URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleK
 <br><br>**Response:**
 +	If no rows match the office name, it returns an error message.
 +	If a single row matches the office name, it returns the "Pincode" and "Delivery" values. 
-
- 
+![Loading image...](Images/Picture4.png)
+<br>
 +	If multiple rows match the office name, it returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values.
-  
+ ![Loading image...](Images/Picture5.png) 
 <br><br>
 **Contributing**<br>
 We welcome contributions! Please follow these steps:
