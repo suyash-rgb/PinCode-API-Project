@@ -19,8 +19,8 @@ Detailed description of the working and type of response are provided below.
 <br><br>
 NOTE: Method is GET for all scenarios
 <br><br>
-**cURL**
-curl --location 'https://script.google.com/macros/s/AKfycbznP4tVoAoSpaJ2XSR9u1wum3fZkUoLCvlYvIYTy6z-XIbyIDnjgh8NmsLCrvcSCFvN/exec?district=Indore'
+**cURL** <br>
+--location 'https://script.google.com/macros/s/AKfycbznP4tVoAoSpaJ2XSR9u1wum3fZkUoLCvlYvIYTy6z-XIbyIDnjgh8NmsLCrvcSCFvN/exec?district=Indore'
 <br><br>
 
 Sample Sheet: 
