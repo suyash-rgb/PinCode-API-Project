@@ -12,6 +12,7 @@ The API functionality was modified and now serves 3 purposes:
 <br><br>
 **I have changed the last part (i.e., Search By Office Name), so it is not functional. <br>
 I present it to you for fixing the intentional bug and/or providing new functionality for the API.<br>
+Feel free to integrate it into your projects. :)
 Do something creative! Good Luck!**
 <br>
 Detailed description of the working and type of response are provided below. 
