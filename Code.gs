@@ -95,7 +95,7 @@ function doGet(e) {
         if (districtIndex !== -1) {
           result.District = matchingRows[0][districtIndex];
         } else {
-          console.error('District index not found');
+          console.error('officeName index not found');
         }
 
         return ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
