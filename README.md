@@ -8,8 +8,7 @@ The PIN Code API provides functionalities related to PIN codes, initially develo
 NOTE: Method is GET for all scenarios
 <br><br>
 **cURL**
-curl --location 'https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?district=indore' \
---data ''
+curl --location 'https://script.google.com/macros/s/AKfycbznP4tVoAoSpaJ2XSR9u1wum3fZkUoLCvlYvIYTy6z-XIbyIDnjgh8NmsLCrvcSCFvN/exec?district=Indore'
 <br><br>
 
 Sample Sheet: 
@@ -17,7 +16,7 @@ Sample Sheet:
 
 
 **Scenario 1: Searching by Pincode**
-URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?pincode=123456
+URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleKxSKoLnpOCRDpgd7eAnsF79ZNFhqrirQp/exec?pincode=123456
 <br><br>**Response:**
 +	If no rows contains the pincode, it returns an error message.
 +	If a single row matches the pincode, it returns the entire row as a JSON object.(E.g. 452012)<br>
@@ -25,14 +24,14 @@ URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3F
 +	If multiple rows match the pincode, it returns an array of office names. (E.g. 454001)
 
 **Scenario 2: Searching by District**
-URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?district=exampleDistrict
+URL: https://script.google.com/macros/s/AKfycbznP4tVoAoSpaJ2XSR9u1wum3fZkUoLCvlYvIYTy6z-XIbyIDnjgh8NmsLCrvcSCFvN/exec?district=exampleDistrict
 <br><br>**Response:**
 +	If no rows match the district, it returns an error message.
 +	If rows match the district, it returns an array of objects with "Office Name", "Pincode", and "Delivery" values.
 
 
 **Scenario 3: Searching by Office Name**
-URL: https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwewPu4DvXygom3FHIIgBQ_U70OwmLzpJrBgVzEUy6plTg9O/exec?officeName=exampleOfficeName
+URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleKxSKoLnpOCRDpgd7eAnsF79ZNFhqrirQp/exec?=exampleOfficeName
 <br><br>**Response:**
 +	If no rows match the office name, it returns an error message.
 +	If a single row matches the office name, it returns the "Pincode" and "Delivery" values. 
