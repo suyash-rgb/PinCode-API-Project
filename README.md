@@ -20,7 +20,7 @@ URL: https://script.google.com/macros/s/AKfycbyQ8f_u4mx77onOKUv3HZIWXmzyjoqqmleK
 <br><br>**Response:**
 +	If no rows contains the pincode, it returns an error message.
 +	If a single row matches the pincode, it returns the entire row as a JSON object.(E.g. 452012)<br>
- ![Loading image...](images/singlerowresultforpincode.png)
+ ![Loading image...](Images/Picture1.png)
 +	If multiple rows match the pincode, it returns an array of office names. (E.g. 454001)
 
 **Scenario 2: Searching by District**
