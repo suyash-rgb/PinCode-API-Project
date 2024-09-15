@@ -13,7 +13,7 @@ curl --location 'https://script.google.com/macros/s/AKfycbzs_5sOiH_PQQR7wnwBxwew
 <br><br>
 
 Sample Sheet: 
-![Loading image...](images/SampleSheet.png)
+![Loading image...](Images/samplesheet.png)
 
 
 **Scenario 1: Searching by Pincode**
