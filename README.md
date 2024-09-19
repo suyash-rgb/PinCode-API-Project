@@ -9,6 +9,8 @@ The API functionality was modified and now serves 3 purposes:
 + Search By Pincode
 + Search By District
 + Search By Office Name
+
+[![Now in Android: 55]//Title (https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)](https://drive.google.com/file/d/1OM2OD7XhhsgeRKrg4kRINGOegUS1OKbx/view?usp=sharing "PinCode API in Action")
 <br><br>
 **I have changed the last part (i.e., Search By Office Name), so it is not functional. <br>
 I present it to you for fixing the intentional bug and/or providing new functionality for the API.<br>
