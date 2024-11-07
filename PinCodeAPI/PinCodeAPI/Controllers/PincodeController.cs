@@ -17,6 +17,13 @@ namespace PinCodeAPI.Controllers
             _pincodeService = pincodeService;
         }
 
+        [HttpGet("all")]
+        public ActionResult GetAllPincodes()
+        {
+            var pincodes = _pincodeService.GetAllPincodes();
+            return Ok(pincodes);
+        }
+
         [HttpGet("search/district/{district}")]
         public ActionResult SearchByDistrict(string district)
         {
@@ -78,6 +85,8 @@ namespace PinCodeAPI.Controllers
                 return Ok(response);
             } 
         }
+
+
 
         [HttpGet("deliverystatus/{officeName}/{pincode}/{district}/{divisionName}")]
         public ActionResult GetDeliveryStatus(string officeName, int pincode, string district, string divisionName)
