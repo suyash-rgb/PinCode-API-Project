@@ -1,0 +1,6 @@
+@PinCodeAPI_HostAddress = http://localhost:5064
+
+GET {{PinCodeAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
