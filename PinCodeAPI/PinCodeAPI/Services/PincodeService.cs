@@ -153,5 +153,44 @@ namespace PinCodeAPI.Services
                 existingPincode.StateName = updatedPincode.StateName;
             }
         }
+
+        public string GetOfficeTypeForOfficeName(string officeName)
+        {
+            foreach (var pin in pincodes)
+            {
+                if (pin.Id.OfficeName.Equals(officeName, System.StringComparison.OrdinalIgnoreCase))
+                {
+                    return pin.OfficeType;
+                }
+            }
+            return null;
+        }
+
+        public List<string> GetOfficeTypeForDistrict(string district, string officeType)
+        {
+            List<string> results = new List<string>();
+            foreach (var pin in pincodes)
+            {
+                if (pin.Id.District.Equals(district, System.StringComparison.OrdinalIgnoreCase) && pin.OfficeType.Equals(officeType, System.StringComparison.OrdinalIgnoreCase))
+                {
+                    results.Add(pin.Id.OfficeName);
+                }
+            }
+            return results;
+        }
+
+        public List<string> GetOfficeTypeForDivision(string divisionName, string officeType)
+        {
+            List<string> results = new List<string>();
+            foreach (var pin in pincodes)
+            {
+                if (pin.Id.DivisionName.Equals(divisionName, System.StringComparison.OrdinalIgnoreCase) && pin.OfficeType.Equals(officeType, System.StringComparison.OrdinalIgnoreCase))
+                {
+                    results.Add(pin.Id.OfficeName);
+                }
+            }
+            return results;
+        }
+
     }
 }

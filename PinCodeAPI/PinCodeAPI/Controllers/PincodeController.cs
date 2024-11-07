@@ -86,6 +86,50 @@ namespace PinCodeAPI.Controllers
             } 
         }
 
+        [HttpGet("deliverystatus/pincode/{pincode}")]
+        public ActionResult GetDeliveryStatusByPincode(int pincode)
+        {
+            var pincodes = _pincodeService.GetPincodesByPincode(pincode);
+
+            if (pincodes.Count == 0)
+            {
+                return NotFound("No records found for the given pincode.");
+            }
+            else if (pincodes.Count == 1)
+            {
+                var deliveryStatus = pincodes[0].Delivery ? "Delivery is available" : "Delivery is not available";
+                return Ok(new { Message = deliveryStatus });
+            }
+            else
+            {
+                List<object> officeNames = new List<object>();
+                foreach (var pin in pincodes)
+                {
+                    officeNames.Add(new { OfficeName = pin.Id.OfficeName });
+                }
+                return Ok(officeNames);
+            }
+        }
+
+        [HttpGet("deliverystatus/officename/{officeName}")]
+        public ActionResult GetDeliveryStatusByOfficeName(string officeName)
+        {
+            var results = _pincodeService.GetPincodesByOfficeName(officeName);
+
+            if (results.Count == 0)
+            {
+                return NotFound("No records found for the given office name.");
+            }
+            else if (results.Count == 1)
+            {
+                var deliveryStatus = results[0].Delivery ? "Delivery is available" : "Delivery is not available";
+                return Ok(new { Message = deliveryStatus });
+            }
+            else
+            {
+                return BadRequest("Multiple records found for the given office name.");
+            }
+        }
 
 
         [HttpGet("deliverystatus/{officeName}/{pincode}/{district}/{divisionName}")]
@@ -127,5 +171,42 @@ namespace PinCodeAPI.Controllers
             _pincodeService.DeletePincode(id);
             return Ok("Pincode deleted successfully");
         }
+
+        [HttpGet("officetype/officename/{officeName}")]
+        public ActionResult GetOfficeTypeForOfficeName(string officeName)
+        {
+            var result = _pincodeService.GetOfficeTypeForOfficeName(officeName);
+
+            if (result == null)
+            {
+                return NotFound("No records found for the given office name.");
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("officetype/district/{district}/{officeType}")]
+        public ActionResult GetOfficeTypeForDistrict(string district, string officeType)
+        {
+            var results = _pincodeService.GetOfficeTypeForDistrict(district, officeType);
+
+            if (results.Count == 0)
+            {
+                return NotFound("No records found for the given district and office type.");
+            }
+            return Ok(results);
+        }
+
+        [HttpGet("officetype/division/{divisionName}/{officeType}")]
+        public ActionResult GetOfficeTypeForDivision(string divisionName, string officeType)
+        {
+            var results = _pincodeService.GetOfficeTypeForDivision(divisionName, officeType);
+
+            if (results.Count == 0)
+            {
+                return NotFound("No records found for the given division and office type.");
+            }
+            return Ok(results);
+        }
+
     }
 }
