@@ -26,19 +26,6 @@ namespace PinCodeAPI.Controllers
             return Ok(pincodes);
         }
 
-        [HttpGet("search/district/{district}")]
-        public ActionResult SearchByDistrict(string district)
-        {
-            var result = _pincodeService.GetPincodesByDistrict(district);
-
-            if (result == null || result.Count == 0)
-            {
-                return NotFound("No records found for the given district.");
-            }
-
-            return Ok(result);
-        }
-
         [HttpGet("{pincode}")]
         public ActionResult GetPincodesByPincode(int pincode)
         {
@@ -62,6 +49,20 @@ namespace PinCodeAPI.Controllers
                 return Ok(officeNames);
             }
         }
+
+        [HttpGet("search/district/{district}")]
+        public ActionResult SearchByDistrict(string district)
+        {
+            var result = _pincodeService.GetPincodesByDistrict(district);
+
+            if (result == null || result.Count == 0)
+            {
+                return NotFound("No records found for the given district.");
+            }
+
+            return Ok(result);
+        }
+
 
         [HttpGet("search/officename/{officeName}")] 
         public ActionResult SearchByOfficeName(string officeName) { 
@@ -148,7 +149,7 @@ namespace PinCodeAPI.Controllers
             return Ok(new {Message = deliveryStatus});
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         [Authorize(AuthenticationSchemes = "BasicAuthentication", Policy = "RequireAuthenticatedUser")]
         public ActionResult AddPincode([FromBody] Pincode pincode)
         {
