@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PinCodeAPI.Models;
 using PinCodeAPI.Services;
@@ -147,6 +149,7 @@ namespace PinCodeAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(AuthenticationSchemes = "BasicAuthentication", Policy = "RequireAuthenticatedUser")]
         public ActionResult AddPincode([FromBody] Pincode pincode)
         {
             _pincodeService.AddPincode(pincode);
@@ -154,6 +157,7 @@ namespace PinCodeAPI.Controllers
         }
 
         [HttpPut("{officeName}/{pincode}/{district}/{divisionName}")]
+        [Authorize(AuthenticationSchemes = "BasicAuthentication", Policy = "RequireAuthenticatedUser")]
         public ActionResult UpdatePincode(string officeName, int pincode, string district, string divisionName, [FromBody] Pincode updatedPincode)
         {
             var id = new PincodeId { OfficeName = officeName, Pincode = pincode, District = district, DivisionName = divisionName };
@@ -165,6 +169,7 @@ namespace PinCodeAPI.Controllers
         }
 
         [HttpDelete("{officeName}/{pincode}/{district}/{divisionName}")]
+        [Authorize(AuthenticationSchemes = "BasicAuthentication", Policy = "RequireAuthenticatedUser")]
         public ActionResult DeletePincode(string officeName, int pincode, string district, string divisionName)
         {
             var id = new PincodeId { OfficeName = officeName, Pincode = pincode, District = district, DivisionName = divisionName };
