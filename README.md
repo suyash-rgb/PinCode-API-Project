@@ -22,3 +22,11 @@ Provide examples of how to use the API and any necessary authentication.
 ```sh
 # Example request to fetch pincode details
 GET https://localhost:44337/api/Pincode/{pincode}
+
+## Endpoints
+
+### 1. Get All Pincodes
+- **Method**: GET
+- **cURL**: 
+  ```sh
+  curl https://localhost:44337/api/Pincode/all
