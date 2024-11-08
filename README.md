@@ -87,7 +87,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **Method:** POST  
    **cURL:** `https://localhost:44337/api/Pincode/add`  
    **Description:** Add a new pincode record (Basic Authentication Required)  
-   **Response:**
+   **Response:** <br>
      **Authorised User:** "Pincode added successfully"  
      **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
@@ -95,7 +95,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **Method:** PUT  
    **cURL:** `https://localhost:44337/api/Pincode/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
    **Description:** All details of the pincode record can be updated except for the pincode (Basic Auth Required)  
-   **Response:**
+   **Response:** <br>
      **Authorised User:** "Pincode details updated successfully"  
      **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
@@ -103,7 +103,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
     **Method:** DELETE  
     **cURL:** `https://localhost:44337/api/Pincode/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
     **Description:** Delete an existing Pincode record.  
-    **Response:**
+    **Response:** <br>
       **Authorised User:** "Pincode deleted successfully"  
       **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
