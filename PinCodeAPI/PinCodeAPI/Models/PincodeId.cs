@@ -1,5 +1,6 @@
 ﻿namespace PinCodeAPI.Models
 {
+    //attributes that form the composite primary key
     public class PincodeId
     {
         public string OfficeName { get; set; }
