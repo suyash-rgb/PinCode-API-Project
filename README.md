@@ -58,8 +58,8 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns an error message if no rows match the office name.
      - Returns the "Pincode" and "Delivery" values if a single row matches the office name.
      - Returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values if multiple rows match the office name.  
-   **Response:**  <br>
-   **Single Match:** 
+   **Response:** <br>
+   **Single Match:** <br>
    **Multiple Matches:**
 
 5. **Delivery Status for Pincode**  
