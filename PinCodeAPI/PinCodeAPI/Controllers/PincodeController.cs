@@ -105,12 +105,13 @@ namespace PinCodeAPI.Controllers
             }
             else
             {
-                List<object> officeNames = new List<object>();
+                List<object> officeNamesAndDeliveryStatus = new List<object>();
                 foreach (var pin in pincodes)
                 {
-                    officeNames.Add(new { OfficeName = pin.Id.OfficeName });
+                    var deliveryStatus = pin.Delivery ? "Delivery is available" : "Delivery is not available";
+                    officeNamesAndDeliveryStatus.Add(new { OfficeName = pin.Id.OfficeName, Message=deliveryStatus });
                 }
-                return Ok(officeNames);
+                return Ok(officeNamesAndDeliveryStatus);
             }
         }
 

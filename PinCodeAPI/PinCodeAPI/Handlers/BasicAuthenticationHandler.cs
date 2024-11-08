@@ -37,7 +37,7 @@
                 var password = credentials[1];
 
                 // Validate the credentials
-                if (username == "admin" && password == "password") // Replace with your validation logic
+                if (username == "admin" && password == "password") 
                 {
                     var claims = new[]
                     {
