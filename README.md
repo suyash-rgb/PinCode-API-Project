@@ -112,24 +112,18 @@ GET https://localhost:44337/api/Pincode/{pincode}
    - **cURL:** `https://localhost:44337/api/Pincode/officetype/district/{{district}}/{{officeType}}`
    - **Description:** Pass the District and Office Type values in the request and get a list of office names with the specific office type in the particular district.
    - **Response:** 
-     ```
-     [ "officeName1", "officeName2", "officeName3", ... , "officeNamen" ]
-     ```
+     
 
 12. **Offices In a Division**
    - **Method:** GET
    - **cURL:** `https://localhost:44337/api/Pincode/officetype/division/{{divisionName}}/{{officeType}}`
    - **Description:** Pass the Division and Office Type values in the request and get a list of office names with the specific office type in the particular division.
    - **Response:** 
-     ```
-     [ "officeName1", "officeName2", "officeName3", ... , "officeNamen" ]
-     ```
+     
 
 13. **Get Office Type for an Office Name**
    - **Method:** GET
    - **cURL:** `https://localhost:44337/api/Pincode/officetype/officename/{{officeName}}`
    - **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.
    - **Response:** 
-     ```
-     "officeType"
-     ```
+     
