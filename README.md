@@ -39,7 +39,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns an error message if no rows contain the pincode.
      - Returns the entire row as a JSON object if a single row matches the pincode.
      - Returns an array of office names if multiple rows match the pincode.  
-   **Response:**
+   **Response:** <br>
    **Single Matches:**  
    **Multiple Matches:**
 
@@ -58,8 +58,8 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns an error message if no rows match the office name.
      - Returns the "Pincode" and "Delivery" values if a single row matches the office name.
      - Returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values if multiple rows match the office name.  
-   **Response:**
-   **Single Match:**  
+   **Response:**  <br>
+   **Single Match:** 
    **Multiple Matches:**
 
 5. **Delivery Status for Pincode**  
@@ -68,7 +68,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **Description:**
      - Returns the "Delivery" value as a message (e.g., "Delivery is available" for `true` and "Delivery is not available" for `false`) if a single record matches the pincode.
      - Returns an array of objects with "Office Name" and "Delivery" values if multiple records match the pincode.  
-   **Response:**
+   **Response:**  <br>
    **Single Match:**  
    **Multiple Matches:**
 
