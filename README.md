@@ -23,7 +23,7 @@ Provide examples of how to use the API and any necessary authentication.
 # Example request to fetch pincode details
 GET https://localhost:44337/api/Pincode/{pincode}
 
-## Endpoints
+## **EndPoints**
 
 1. **Get All Pincodes**
    - **Method:** GET
