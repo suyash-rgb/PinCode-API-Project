@@ -149,3 +149,14 @@ We welcome contributions! Please follow these steps:
 5. Push to the branch (git push origin feature-branch).
 6. Create a new Pull Request.    
      
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Summary of the MIT License
+
+The MIT License is a permissive free software license that allows for reuse within proprietary software, provided that all copies include the original copyright notice and license. It is a simple and easy-to-understand license that places very few restrictions on reuse, making it a popular choice for open-source projects.
+
+## Contact
+
+For any inquiries or feedback, please contact [suyashbaoney58@gmail.com](mailto:suyashbaoney58@gmail.com).
