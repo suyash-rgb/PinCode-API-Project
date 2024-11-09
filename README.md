@@ -145,7 +145,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/officetype/officename/{{officeName}}`  
    **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.  
    **Response:** 
-     ![Alt Text](Image URL)
+     ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/44e0d2e84ec0a358019c605d8cab45403b579b03/images/20.png)
 
 ## Development Journey
 
