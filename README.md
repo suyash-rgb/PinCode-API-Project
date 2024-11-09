@@ -31,7 +31,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/all`  
    **Description:** List all the pincodes available in the database  
    **Response:**
-   ![Alt Text](Image URL)
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/3f656a4346267c228f867662d422f5bb9cde8a04/images/1.png)
 
 
 3. **Search by Pincode**  
