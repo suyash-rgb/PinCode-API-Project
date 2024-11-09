@@ -43,7 +43,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns an array of office names if multiple rows match the pincode.  
    **Response:** <br>
    **Single Matches:**
-   ![Alt Text](Image URL)
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/be2900228d4bc9ed9c721d2862d0cca908dc7a30/images/2.png)
 
    **Multiple Matches:**
    ![Alt Text](Image URL)
