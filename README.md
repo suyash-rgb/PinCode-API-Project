@@ -148,9 +148,14 @@ GET https://localhost:44337/api/Pincode/{pincode}
 14. **Get Office Type for an Office Name**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/officename/{{officeName}}`  
-   **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.  
-   **Response:** 
+   **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.
+    - If a single record matches the office name, return the office type.
+     - If multiple records match the office name, return detailed information for each matching record.
+   **Response:**
+   **Single Match:** 
      ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/44e0d2e84ec0a358019c605d8cab45403b579b03/images/20.png)
+
+    **Multiple Matches:** 
 
 ## Development Journey
 
