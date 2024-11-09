@@ -155,7 +155,8 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **Single Match:** 
      ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/44e0d2e84ec0a358019c605d8cab45403b579b03/images/20.png)
 
-    **Multiple Matches:** 
+    **Multiple Matches:**
+    ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/ba39be418fccde59ba3d4abc8b4f93f3c06208e7/images/21.png)
 
 ## Development Journey
 
