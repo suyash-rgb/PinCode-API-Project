@@ -137,7 +137,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/officetype/division/{{divisionName}}/{{officeType}}`  
    **Description:** Pass the Division and Office Type values in the request and get a list of office names with the specific office type in the particular division.  
    **Response:** 
-    ![Alt Text](Image URL)
+    ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/dde08f4f948e5a7ec896eff7a9a4bdb3003630c2/images/19.png)
  
 
 14. **Get Office Type for an Office Name**  
