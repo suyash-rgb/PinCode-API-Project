@@ -83,7 +83,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/3652e25e6bc95027c8ac6164dc17ff5879f5d7f6/images/7.png)
 
    **Multiple Matches:**
-   ![Alt Text](Image URL)
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/ac251184e8b66ec449c2e46da4690f96ef03af81/images/8.png)
 
 
 9. **Delivery Status for Office Name**  
