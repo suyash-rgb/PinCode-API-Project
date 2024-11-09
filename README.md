@@ -69,7 +69,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **Response:** <br>
    **Single Match:** <br> ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/fba0196e56608f54fabae72e966c9c2e0b51d020/images/5.png)
 
-   **Multiple Matches:** ![Alt Text](Image URL)
+   **Multiple Matches:** ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/c02cbee70db5a88c8fae714fb91ea5e91b7dd323/images/6.png)
 
 
 7. **Delivery Status for Pincode**  
