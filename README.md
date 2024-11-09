@@ -129,14 +129,25 @@ GET https://localhost:44337/api/Pincode/{pincode}
 
 ## Development Journey
 
+## Initial Phase: Pincode Lookup
 
+The journey of Postal Probe began with a project initially named Pincode Lookup. It was created using Google Apps Script and Google Sheets, intended for integration into a larger project. However, due to the substantial size of the database (containing over 1.5 lakh pincode records), the API response times were excessively slow, ranging from 15 to 20 seconds. Over time, additional functionalities were added to enhance the project.
 
-1. **Planning:** We start with thorough planning and requirement gathering to ensure a clear understanding of the project goals.
-2. **Design:** We focus on creating a robust architecture and design that can accommodate future scalability and maintainability.
-3. **Implementation:** Our development process follows best practices and coding standards to ensure high-quality code.
-4. **Testing:** We conduct rigorous testing at different stages to identify and fix bugs early in the development cycle.
-5. **Deployment:** We use continuous integration and deployment practices to streamline the release process.
-6. **Feedback:** We value feedback from users and contributors to continuously improve our project.
+## Transition to Postal Probe
+
+To overcome the limitations of the initial version, I decided to replicate the database and integrate a portion of it statically into the service layer of Postal Probe. The decision to redevelop the API using C# and ASP .NET Core Framework was driven by several factors:
+
+- **Familiarity:** C# is syntactically similar to Java, making the transition smoother.
+- **Exploration:** I wanted to explore the features of Swagger UI.
+- **Testing:** I aimed to understand how unit testing is implemented in this environment.
+
+## Database Complexity
+
+The database architecture is intricate, consisting of the following nine attributes: CircleName, RegionName, DivisionName, OfficeName, Pincode, OfficeType, Delivery, District, and StateName. No single attribute could uniquely identify a record in the database. After extensive analysis and studying the data for several weeks, I identified that a combination of three attributes was required to uniquely identify a record. However, during development, I discovered instances where this combination still yielded multiple records.
+
+## Composite Primary Key
+
+To address this, I identified a fourth attribute that could be used along with the previous three to uniquely identify a record. Therefore, the composite primary key for the database was established as:
 
 ## Contributing
 
