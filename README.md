@@ -88,8 +88,13 @@ GET https://localhost:44337/api/Pincode/{pincode}
 
 9. **Delivery Status for Office Name**  
    **Method:** GET  
-   **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`  
+   **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`
+   **Description:**
+      - If a single record matches the office name, it returns the office name and delivery status.
+     - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.
    **Response:**
+   **Single Match:**
+   **Multiple Matches:**
 
 7. **Delivery Status for Primary Key**  
    **Method:** GET  
