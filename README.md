@@ -93,7 +93,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
       - If a single record matches the office name, it returns the office name and delivery status.
      - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.
    **Response:**
-   **Single Match:**
+   **Single Match:** ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/5e1d3e3ba5b3cd8564f003bf5cb8c14c139961e0/images/9.png)
    **Multiple Matches:**
 
 7. **Delivery Status for Primary Key**  
