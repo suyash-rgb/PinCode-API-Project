@@ -56,7 +56,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns an error message if no rows match the district.
      - Returns an array of objects with "Office Name", "Pincode", and "Delivery" values if rows match the district.  
    **Response:**
-   ![Alt Text](Image URL)
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/677dc33f440e12ce55991ed01d4dd6695c5bd80f/images/4.png)
 
 
 6. **Search by Office Name**  
