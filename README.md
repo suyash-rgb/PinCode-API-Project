@@ -67,7 +67,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns the "Pincode" and "Delivery" values if a single row matches the office name.
      - Returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values if multiple rows match the office name.  
    **Response:** <br>
-   **Single Match:** <br> ![Alt Text](Image URL)
+   **Single Match:** <br> ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/fba0196e56608f54fabae72e966c9c2e0b51d020/images/5.png)
 
    **Multiple Matches:** ![Alt Text](Image URL)
 
