@@ -91,10 +91,10 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`
    **Description:**
       - If a single record matches the office name, it returns the office name and delivery status.
-     - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.
-   **Response:**
-   **Single Match:**
-   **Multiple Matches:**
+     - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.  <br>
+   **Response:**  <br>
+   **Single Match:** ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/5e1d3e3ba5b3cd8564f003bf5cb8c14c139961e0/images/9.png)
+   **Multiple Matches:** ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/b3b7bc93036dddb51a2df7bff11bbc7128ee9c70/images/10.png)
 
 7. **Delivery Status for Primary Key**  
    **Method:** GET  
@@ -150,12 +150,13 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/officetype/officename/{{officeName}}`  
    **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.
     - If a single record matches the office name, return the office type.
-     - If multiple records match the office name, return detailed information for each matching record.
-   **Response:**
+     - If multiple records match the office name, return detailed information for each matching record.  <br>
+   **Response:**  <br>
    **Single Match:** 
      ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/44e0d2e84ec0a358019c605d8cab45403b579b03/images/20.png)
 
-    **Multiple Matches:** 
+    **Multiple Matches:**
+    ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/ba39be418fccde59ba3d4abc8b4f93f3c06208e7/images/21.png)
 
 ## Development Journey
 
@@ -177,7 +178,7 @@ The database architecture is intricate, consisting of the following nine attribu
 
 ## Composite Primary Key
 
-To address this, I identified a fourth attribute that could be used along with the previous three to uniquely identify a record. Therefore, the composite primary key for the database was established as:
+To address this, I identified a fourth attribute that could be used along with the previous three to uniquely identify a record. Therefore, the composite primary key for the database was established as:  <br>
 `COMPOSITE PRIMARY KEY (`OfficeName`, `Pincode`, `District`, `DivisionName`)`
 
 
