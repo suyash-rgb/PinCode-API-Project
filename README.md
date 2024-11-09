@@ -91,7 +91,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`
    **Description:**
       - If a single record matches the office name, it returns the office name and delivery status.
-     - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.
+     - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.  <br>
    **Response:**
    **Single Match:** ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/5e1d3e3ba5b3cd8564f003bf5cb8c14c139961e0/images/9.png)
    **Multiple Matches:**
