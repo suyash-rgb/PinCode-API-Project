@@ -31,8 +31,10 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/all`  
    **Description:** List all the pincodes available in the database  
    **Response:**
+   ![Alt Text](Image URL)
 
-2. **Search by Pincode**  
+
+3. **Search by Pincode**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/{{pincode}}`  
    **Description:**
@@ -40,18 +42,24 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns the entire row as a JSON object if a single row matches the pincode.
      - Returns an array of office names if multiple rows match the pincode.  
    **Response:** <br>
-   **Single Matches:**  
-   **Multiple Matches:**
+   **Single Matches:**
+   ![Alt Text](Image URL)
 
-3. **Search by District**  
+   **Multiple Matches:**
+   ![Alt Text](Image URL)
+
+
+5. **Search by District**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/search/district/{{district}}`  
    **Description:**
      - Returns an error message if no rows match the district.
      - Returns an array of objects with "Office Name", "Pincode", and "Delivery" values if rows match the district.  
    **Response:**
+   ![Alt Text](Image URL)
 
-4. **Search by Office Name**  
+
+6. **Search by Office Name**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/search/officename/{{officeName}}`  
    **Description:**
@@ -59,20 +67,26 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns the "Pincode" and "Delivery" values if a single row matches the office name.
      - Returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values if multiple rows match the office name.  
    **Response:** <br>
-   **Single Match:** <br>
-   **Multiple Matches:**
+   **Single Match:** <br> ![Alt Text](Image URL)
 
-5. **Delivery Status for Pincode**  
+   **Multiple Matches:** ![Alt Text](Image URL)
+
+
+7. **Delivery Status for Pincode**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/pincode/{{pincode}}`  
    **Description:**
      - Returns the "Delivery" value as a message (e.g., "Delivery is available" for `true` and "Delivery is not available" for `false`) if a single record matches the pincode.
      - Returns an array of objects with "Office Name" and "Delivery" values if multiple records match the pincode.  
    **Response:**  <br>
-   **Single Match:**  
-   **Multiple Matches:**
+   **Single Match:**
+   ![Alt Text](Image URL)
 
-6. **Delivery Status for Office Name**  
+   **Multiple Matches:**
+   ![Alt Text](Image URL)
+
+
+9. **Delivery Status for Office Name**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`  
    **Response:**
@@ -82,8 +96,10 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
    **Description:** User provides the complete composite primary key in the request and receives the delivery status in the response.  
    **Response:**
+   ![Alt Text](Image URL)
 
-8. **Add Pincode Record**  
+
+9. **Add Pincode Record**  
    **Method:** POST  
    **cURL:** `https://localhost:44337/api/Pincode/add`  
    **Description:** Add a new pincode record (Basic Authentication Required)  
@@ -91,7 +107,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      **Authorised User:** "Pincode added successfully"  
      **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
-9. **Update Pincode Details**  
+10. **Update Pincode Details**  
    **Method:** PUT  
    **cURL:** `https://localhost:44337/api/Pincode/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
    **Description:** All details of the pincode record can be updated except for the pincode (Basic Auth Required)  
@@ -99,7 +115,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      **Authorised User:** "Pincode details updated successfully"  
      **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
-10. **Delete Pincode Record**  
+11. **Delete Pincode Record**  
     **Method:** DELETE  
     **cURL:** `https://localhost:44337/api/Pincode/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
     **Description:** Delete an existing Pincode record.  
@@ -107,21 +123,21 @@ GET https://localhost:44337/api/Pincode/{pincode}
       **Authorised User:** "Pincode deleted successfully"  
       **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
-11. **Offices In a District**  
+12. **Offices In a District**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/district/{{district}}/{{officeType}}`  
    **Description:** Pass the District and Office Type values in the request and get a list of office names with the specific office type in the particular district.  
    **Response:** 
     
 
-12. **Offices In a Division**  
+13. **Offices In a Division**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/division/{{divisionName}}/{{officeType}}`  
    **Description:** Pass the Division and Office Type values in the request and get a list of office names with the specific office type in the particular division.  
    **Response:** 
      
 
-13. **Get Office Type for an Office Name**  
+14. **Get Office Type for an Office Name**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/officename/{{officeName}}`  
    **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.  
