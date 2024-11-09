@@ -1,7 +1,7 @@
 # Postal Probe - Pincode API 
 
 ## Description
-**Postal Probe** is a robust and efficient API Solution designed to provide detailed postal information. Developed using ASP .NET MVC Core and C#, this project aims to deliver rapid responses and a seamless user experience compared to its earlier version built with Google Apps Script.
+**Postal Probe** is a robust and efficient API Solution designed to provide detailed postal information. Developed using ASP .NET Core and C#, this project aims to deliver rapid responses and a seamless user experience compared to its earlier version built with Google Apps Script.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -31,8 +31,10 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/all`  
    **Description:** List all the pincodes available in the database  
    **Response:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/3f656a4346267c228f867662d422f5bb9cde8a04/images/1.png)
 
-2. **Search by Pincode**  
+
+3. **Search by Pincode**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/{{pincode}}`  
    **Description:**
@@ -40,18 +42,24 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns the entire row as a JSON object if a single row matches the pincode.
      - Returns an array of office names if multiple rows match the pincode.  
    **Response:** <br>
-   **Single Matches:**  
-   **Multiple Matches:**
+   **Single Matches:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/be2900228d4bc9ed9c721d2862d0cca908dc7a30/images/2.png)
 
-3. **Search by District**  
+   **Multiple Matches:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/71c284af05c174034e7009a4eac3a32f259111dc/images/3.png)
+
+
+5. **Search by District**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/search/district/{{district}}`  
    **Description:**
      - Returns an error message if no rows match the district.
      - Returns an array of objects with "Office Name", "Pincode", and "Delivery" values if rows match the district.  
    **Response:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/677dc33f440e12ce55991ed01d4dd6695c5bd80f/images/4.png)
 
-4. **Search by Office Name**  
+
+6. **Search by Office Name**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/search/officename/{{officeName}}`  
    **Description:**
@@ -59,31 +67,44 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns the "Pincode" and "Delivery" values if a single row matches the office name.
      - Returns an array of objects with "Circle Name", "Division Name", "Pincode", "District", and "StateName" values if multiple rows match the office name.  
    **Response:** <br>
-   **Single Match:** <br>
-   **Multiple Matches:**
+   **Single Match:** <br> ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/fba0196e56608f54fabae72e966c9c2e0b51d020/images/5.png)
 
-5. **Delivery Status for Pincode**  
+   **Multiple Matches:** ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/c02cbee70db5a88c8fae714fb91ea5e91b7dd323/images/6.png)
+
+
+7. **Delivery Status for Pincode**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/pincode/{{pincode}}`  
    **Description:**
      - Returns the "Delivery" value as a message (e.g., "Delivery is available" for `true` and "Delivery is not available" for `false`) if a single record matches the pincode.
      - Returns an array of objects with "Office Name" and "Delivery" values if multiple records match the pincode.  
    **Response:**  <br>
-   **Single Match:**  
-   **Multiple Matches:**
+   **Single Match:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/3652e25e6bc95027c8ac6164dc17ff5879f5d7f6/images/7.png)
 
-6. **Delivery Status for Office Name**  
+   **Multiple Matches:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/ac251184e8b66ec449c2e46da4690f96ef03af81/images/8.png)
+
+
+9. **Delivery Status for Office Name**  
    **Method:** GET  
-   **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`  
+   **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/officename/{{officeName}}`
+   **Description:**
+      - If a single record matches the office name, it returns the office name and delivery status.
+     - If multiple records match the office name, it returns the pincode, office name, and delivery status for each matching record.
    **Response:**
+   **Single Match:**
+   **Multiple Matches:**
 
 7. **Delivery Status for Primary Key**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
    **Description:** User provides the complete composite primary key in the request and receives the delivery status in the response.  
    **Response:**
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/80fe5cae1037361fbc270105c2f652fafa3779bb/images/11.png)
 
-8. **Add Pincode Record**  
+
+9. **Add Pincode Record**  
    **Method:** POST  
    **cURL:** `https://localhost:44337/api/Pincode/add`  
    **Description:** Add a new pincode record (Basic Authentication Required)  
@@ -91,7 +112,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      **Authorised User:** "Pincode added successfully"  
      **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
-9. **Update Pincode Details**  
+10. **Update Pincode Details**  
    **Method:** PUT  
    **cURL:** `https://localhost:44337/api/Pincode/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
    **Description:** All details of the pincode record can be updated except for the pincode (Basic Auth Required)  
@@ -99,7 +120,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      **Authorised User:** "Pincode details updated successfully"  
      **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
-10. **Delete Pincode Record**  
+11. **Delete Pincode Record**  
     **Method:** DELETE  
     **cURL:** `https://localhost:44337/api/Pincode/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
     **Description:** Delete an existing Pincode record.  
@@ -107,25 +128,34 @@ GET https://localhost:44337/api/Pincode/{pincode}
       **Authorised User:** "Pincode deleted successfully"  
       **Unauthorized User:** "You need to provide valid credentials to access this resource."
 
-11. **Offices In a District**  
+12. **Offices In a District**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/district/{{district}}/{{officeType}}`  
    **Description:** Pass the District and Office Type values in the request and get a list of office names with the specific office type in the particular district.  
    **Response:** 
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/39545552caac5589422d10ef4b8d656167f9ba45/images/18.png)
+
     
 
-12. **Offices In a Division**  
+13. **Offices In a Division**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/division/{{divisionName}}/{{officeType}}`  
    **Description:** Pass the Division and Office Type values in the request and get a list of office names with the specific office type in the particular division.  
    **Response:** 
-     
+    ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/dde08f4f948e5a7ec896eff7a9a4bdb3003630c2/images/19.png)
+ 
 
-13. **Get Office Type for an Office Name**  
+14. **Get Office Type for an Office Name**  
    **Method:** GET  
    **cURL:** `https://localhost:44337/api/Pincode/officetype/officename/{{officeName}}`  
-   **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.  
-   **Response:** 
+   **Description:** Pass the Office Name value in the request and get the office type for the corresponding office name.
+    - If a single record matches the office name, return the office type.
+     - If multiple records match the office name, return detailed information for each matching record.
+   **Response:**
+   **Single Match:** 
+     ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/44e0d2e84ec0a358019c605d8cab45403b579b03/images/20.png)
+
+    **Multiple Matches:** 
 
 ## Development Journey
 
