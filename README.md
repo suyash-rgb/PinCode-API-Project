@@ -148,6 +148,7 @@ The database architecture is intricate, consisting of the following nine attribu
 ## Composite Primary Key
 
 To address this, I identified a fourth attribute that could be used along with the previous three to uniquely identify a record. Therefore, the composite primary key for the database was established as:
+`COMPOSITE PRIMARY KEY (`OfficeName`, `Pincode`, `District`, `DivisionName`)`
 
 
 ## Future Aspirations
