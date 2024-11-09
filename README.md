@@ -80,7 +80,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
      - Returns an array of objects with "Office Name" and "Delivery" values if multiple records match the pincode.  
    **Response:**  <br>
    **Single Match:**
-   ![Alt Text](Image URL)
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/3652e25e6bc95027c8ac6164dc17ff5879f5d7f6/images/7.png)
 
    **Multiple Matches:**
    ![Alt Text](Image URL)
