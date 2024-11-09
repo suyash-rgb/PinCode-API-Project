@@ -137,7 +137,7 @@ The journey of Postal Probe began with a project initially named Pincode Lookup.
 
 To overcome the limitations of the initial version, I decided to replicate the database and integrate a portion of it statically into the service layer of Postal Probe. The decision to redevelop the API using C# and ASP .NET Core Framework was driven by several factors:
 
-- **Familiarity:** C# is syntactically similar to Java, making the transition smoother.
+- **Familiarity:** C# is syntactically similar to Java, which is beneficial for me as a Java developer.
 - **Exploration:** I wanted to explore the features of Swagger UI.
 - **Testing:** I aimed to understand how unit testing is implemented in this environment.
 
