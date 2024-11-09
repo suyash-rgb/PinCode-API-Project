@@ -96,7 +96,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/deliverystatus/{{officeName}}/{{pincode}}/{{district}}/{{divisionName}}`  
    **Description:** User provides the complete composite primary key in the request and receives the delivery status in the response.  
    **Response:**
-   ![Alt Text](Image URL)
+   ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/80fe5cae1037361fbc270105c2f652fafa3779bb/images/11.png)
 
 
 9. **Add Pincode Record**  
