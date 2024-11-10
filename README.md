@@ -39,7 +39,7 @@ GET https://localhost:44337/api/Pincode/{pincode}
    **cURL:** `https://localhost:44337/api/Pincode/{{pincode}}`  
    **Description:**
      - Returns an error message if no rows contain the pincode.
-     - Returns the entire row as a JSON object if a single row matches the pincode.
+     - Returns the entire record as a JSON object if a single row matches the pincode.
      - Returns an array of office names if multiple rows match the pincode.  
    **Response:** <br>
    **Single Matches:**
