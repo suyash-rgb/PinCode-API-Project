@@ -193,7 +193,7 @@ As part of the transition to the ASP .NET Core Framework, I integrated Swagger U
 - **Real-time Testing:** Developers can test API endpoints directly from the Swagger UI interface. This feature is especially useful for debugging and validating API behavior during development.
 
 ![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/efbdf2b645a31bf5be608e6206bd8549aee763ae/images/swagger%20ui.png)
-![Alt Text]()
+![Alt Text](https://github.com/suyash-rgb/PinCode-API-Project/blob/db7202f3965c5345b59a24e4729b69c2fe01c86b/images/try%20it%20out.png)
 ![Alt Text]()
 ![Alt Text]()
 
