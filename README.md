@@ -182,6 +182,18 @@ The database architecture is intricate, consisting of the following nine attribu
 To address this, I identified a fourth attribute that could be used along with the previous three to uniquely identify a record. Therefore, the composite primary key for the database was established as:  <br>
 `COMPOSITE PRIMARY KEY (`OfficeName`, `Pincode`, `District`, `DivisionName`)`
 
+## Integration of Swagger UI
+
+As part of the transition to the ASP .NET Core Framework, I integrated Swagger UI into Postal Probe. Swagger UI offers a user-friendly interface to interact with the API and ensures thorough documentation of the API endpoints. Here are some key aspects of this integration:
+
+- **Ease of Exploration:** Swagger UI provides an interactive interface that allows developers to explore and test API endpoints seamlessly. This eliminates the need for extensive documentation and helps in understanding the API's capabilities intuitively.
+
+- **API Documentation:** It automatically generates comprehensive API documentation, making it easier for developers to understand the functionalities, request parameters, and responses.
+
+- **Real-time Testing:** Developers can test API endpoints directly from the Swagger UI interface. This feature is especially useful for debugging and validating API behavior during development.
+
+![Alt Text]()
+
 
 ## Future Aspirations
 
